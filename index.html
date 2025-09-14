@@ -111,17 +111,17 @@
                 </p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
-                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=Infineon" alt="Infineon Technologies logo" class="w-24 h-24 mb-4 rounded-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Infineon_Technologies_logo.svg/120px-Infineon_Technologies_logo.svg.png" alt="Infineon Technologies logo" class="w-24 h-24 mb-4 rounded-full">
                         <h3 class="text-xl font-semibold text-gray-900">Infineon Technologies</h3>
                         <p class="text-sm text-gray-500">Embedded Systems & Hardware Design</p>
                     </div>
                     <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
-                        <img src="https://placehold.co/120x120/0078d4/ffffff?text=Microsoft" alt="Microsoft logo" class="w-24 h-24 mb-4 rounded-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/120px-Microsoft_logo_%282012%29.svg.png" alt="Microsoft logo" class="w-24 h-24 mb-4 rounded-full">
                         <h3 class="text-xl font-semibold text-gray-900">Microsoft</h3>
                         <p class="text-sm text-gray-500">Cloud & Data Solutions Architect</p>
                     </div>
                     <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
-                        <img src="https://placehold.co/120x120/3b82f6/ffffff?text=Google" alt="Google logo" class="w-24 h-24 mb-4 rounded-full">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/120px-Google_2015_logo.svg.png" alt="Google logo" class="w-24 h-24 mb-4 rounded-full">
                         <h3 class="text-xl font-semibold text-gray-900">Google</h3>
                         <p class="text-sm text-gray-500">AI/ML Research & Development</p>
                     </div>
@@ -179,7 +179,6 @@
                         </div>
                         <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition-colors duration-300">Send Message</button>
                     </form>
-                    <p id="success-message" class="mt-4 text-center text-green-600 font-medium hidden">Thank you! Your message has been sent.</p>
                 </div>
             </div>
         </section>
@@ -206,7 +205,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Smooth scrolling for navigation links
@@ -236,33 +234,24 @@
                 });
             });
 
-            // Handle contact form submission
+            // Handle contact form submission with mailto link
             const contactForm = document.getElementById('contact-form');
-            const successMessage = document.getElementById('success-message');
-
             contactForm.addEventListener('submit', (e) => {
-                e.preventDefault(); // Prevent default form submission
-
-                // In a real application, you would send this data to a backend server.
-                // For this example, we just show a success message.
+                e.preventDefault(); 
                 
-                // You can get the form data like this:
-                const formData = {
-                    name: document.getElementById('name').value,
-                    email: document.getElementById('email').value,
-                    message: document.getElementById('message').value
-                };
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
 
-                console.log('Form data:', formData);
+                // URL-encode the form data for a mailto link
+                const subject = encodeURIComponent(`Message from NexGen Skills website from ${name}`);
+                const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
-                // Show success message and reset form
-                successMessage.classList.remove('hidden');
-                contactForm.reset();
-                
-                // Hide success message after a few seconds
-                setTimeout(() => {
-                    successMessage.classList.add('hidden');
-                }, 5000);
+                // Construct the mailto link
+                const mailtoLink = `mailto:xyc@abc.com?subject=${subject}&body=${body}`;
+
+                // Redirect the user to the mailto link
+                window.location.href = mailtoLink;
             });
         });
     </script>
