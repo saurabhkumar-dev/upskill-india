@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Skills: Industry Skills Training for Students & Professionals</title>
+    <meta name="description" content="Master DSA, System Design, AI, and Data Engineering with our expert-led, industry-focused training programs. Designed for college students and professionals seeking career advancement.">
+    <meta name="keywords" content="DSA training, System Design course, AI certification, Data Engineering bootcamp, college skill training, professional refresher courses, industry skills for students, career readiness">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .container {
+            max-width: 1280px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">NexGen Skills</a>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#courses" class="hover:text-indigo-600 transition duration-300">Courses</a>
+                <a href="#instructors" class="hover:text-indigo-600 transition duration-300">Instructors</a>
+                <a href="#for-professionals" class="hover:text-indigo-600 transition duration-300">Professionals</a>
+                <a href="#contact" class="hover:text-indigo-600 transition duration-300">Contact Us</a>
+            </div>
+            <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-indigo-700 transition-colors duration-300 hidden md:block">Get Started</a>
+            <button id="menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white shadow-lg py-4 transition-transform duration-300 transform -translate-y-full">
+            <div class="flex flex-col items-center space-y-4 font-medium">
+                <a href="#courses" class="text-gray-800 hover:text-indigo-600">Courses</a>
+                <a href="#instructors" class="text-gray-800 hover:text-indigo-600">Instructors</a>
+                <a href="#for-professionals" class="text-gray-800 hover:text-indigo-600">Professionals</a>
+                <a href="#contact" class="text-gray-800 hover:text-indigo-600">Contact Us</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-white py-16 md:py-24">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="text-center md:text-left md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Bridge the Gap from Campus to Career.
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-6">
+                        Master the industry skills that matter. Our expert-led training in DSA, System Design, AI, and Data Engineering prepares you for top tech roles.
+                    </p>
+                    <a href="#courses" class="bg-indigo-600 text-white px-8 py-3 rounded-xl shadow-lg font-bold text-lg hover:bg-indigo-700 transition-colors duration-300 transform hover:-translate-y-1 inline-block">Explore Courses</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://placehold.co/600x400/5b21b6/ffffff?text=Tech+Skills" alt="A laptop screen displaying code and a human head with gear symbols, symbolizing technical knowledge and problem-solving." class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Core Training Modules</h2>
+                <p class="text-md md:text-lg text-gray-600 mb-12">Designed to build a strong foundation and a competitive edge for your career.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- DSA Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-indigo-500 mb-4">⚙️</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Structures & Algorithms</h3>
+                        <p class="text-gray-600 text-sm">Master the fundamentals of problem-solving and ace your technical interviews. Covers topics from sorting to graph traversal.</p>
+                    </div>
+                    <!-- System Design Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-purple-500 mb-4">🌐</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">System Design</h3>
+                        <p class="text-gray-600 text-sm">Learn to build scalable, resilient, and fault-tolerant systems. Essential for senior engineering roles and architect positions.</p>
+                    </div>
+                    <!-- AI & ML Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-sky-500 mb-4">🧠</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">AI & Machine Learning</h3>
+                        <p class="text-gray-600 text-sm">Dive into the world of artificial intelligence. Explore supervised, unsupervised, and deep learning models with hands-on projects.</p>
+                    </div>
+                    <!-- Data Engineering Card -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-teal-500 mb-4">📊</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Engineering & Analysis</h3>
+                        <p class="text-gray-600 text-sm">Build robust data pipelines and turn raw data into actionable insights. Learn tools like Spark, Hadoop, and SQL.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section id="instructors" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Expert Instructors</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Learn directly from industry leaders. Our instructors are working professionals from top companies, bringing real-world experience and insights to the classroom.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/120x120/4f46e5/ffffff?text=Infineon" alt="Infineon Technologies logo" class="w-24 h-24 mb-4 rounded-full">
+                        <h3 class="text-xl font-semibold text-gray-900">Infineon Technologies</h3>
+                        <p class="text-sm text-gray-500">Embedded Systems & Hardware Design</p>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/120x120/0078d4/ffffff?text=Microsoft" alt="Microsoft logo" class="w-24 h-24 mb-4 rounded-full">
+                        <h3 class="text-xl font-semibold text-gray-900">Microsoft</h3>
+                        <p class="text-sm text-gray-500">Cloud & Data Solutions Architect</p>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-100 p-6 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/120x120/3b82f6/ffffff?text=Google" alt="Google logo" class="w-24 h-24 mb-4 rounded-full">
+                        <h3 class="text-xl font-semibold text-gray-900">Google</h3>
+                        <p class="text-sm text-gray-500">AI/ML Research & Development</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Professionals Section -->
+        <section id="for-professionals" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Refresher Courses for Professionals</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Stay ahead in a rapidly evolving tech landscape. Our refresher courses help you update your skills and explore new domains without a full curriculum commitment.
+                </p>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Professional+Learning" alt="A professional woman working on her laptop in an office, symbolizing continuous learning." class="rounded-3xl shadow-xl">
+                    </div>
+                    <div class="md:w-1/2 text-left">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Tailored for Your Schedule</h3>
+                        <p class="text-gray-600 mb-4">
+                            Our professional tracks offer flexible timings and are focused on key concepts and recent industry advancements. Refresh your knowledge in a specific area or upskill to take on new projects.
+                        </p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-600">
+                            <li>Concise, focused modules on advanced topics.</li>
+                            <li>Case studies and real-world project deep dives.</li>
+                            <li>One-on-one mentorship with industry experts.</li>
+                            <li>Networking opportunities with a cohort of peers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+                    Have questions about our courses or want to discuss a training partnership with your college? Send us a message below.
+                </p>
+                <div class="max-w-xl mx-auto bg-gray-100 p-8 rounded-2xl shadow-2xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-left text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-left text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-left text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors" placeholder="I would like to know more about..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition-colors duration-300">Send Message</button>
+                    </form>
+                    <p id="success-message" class="mt-4 text-center text-green-600 font-medium hidden">Thank you! Your message has been sent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 text-center md:flex md:justify-between md:items-center">
+            <div class="mb-6 md:mb-0">
+                <p>&copy; 2024 NexGen Skills. All rights reserved.</p>
+                <p class="text-sm mt-1">Empowering the next generation of tech leaders.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Icons (placeholders) -->
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.858.07c3.254.148 4.718 2.378 4.866 5.617.058 1.275.07 1.655.07 4.86c0 3.204-.012 3.584-.07 4.858-.148 3.254-2.378 4.718-5.617 4.866-1.275.058-1.655.07-4.86.07s-3.584-.012-4.858-.07c-3.254-.148-4.718-2.378-4.866-5.617-.058-1.275-.07-1.655-.07-4.86s.012-3.584.07-4.858c.148-3.254 2.378-4.718 5.617-4.866 1.275-.058 1.655-.07 4.86-.07zm0-2.163c-3.259 0-3.667.012-4.947.072-4.358.201-6.756 2.506-6.956 6.945-.06 1.28-.072 1.688-.072 4.947 0 3.259.012 3.667.072 4.947.2 4.358 2.506 6.756 6.945 6.956 1.28.06 1.688.072 4.947.072s3.667-.012 4.947-.072c4.358-.2 6.756-2.506 6.956-6.945.06-1.28.072-1.688.072-4.947 0-3.259-.012-3.667-.072-4.947-.201-4.358-2.506-6.756-6.945-6.956-1.28-.06-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"></path></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm4-12h-4v-4h-4v4h-4v4h4v4h4v-4h4v-4z"></path></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.756s.784-1.756 1.75-1.756 1.75.79 1.75 1.756-.784 1.756-1.75 1.756zm13.5 12.268h-3v-5.604c0-3.368-4-3.565-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Toggle mobile menu
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelectorAll('#mobile-menu a');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('-translate-y-full');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.add('-translate-y-full');
+                });
+            });
+
+            // Handle contact form submission
+            const contactForm = document.getElementById('contact-form');
+            const successMessage = document.getElementById('success-message');
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent default form submission
+
+                // In a real application, you would send this data to a backend server.
+                // For this example, we just show a success message.
+                
+                // You can get the form data like this:
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                };
+
+                console.log('Form data:', formData);
+
+                // Show success message and reset form
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+                
+                // Hide success message after a few seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            });
+        });
+    </script>
+</body>
+</html>
